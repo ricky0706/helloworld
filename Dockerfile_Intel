@@ -1,5 +1,4 @@
-#For ARM
-FROM hypriot/rpi-java
+FROM java:8
 ADD target/*.jar app.jar
 RUN sh -c 'touch /app.jar'
 ENV JAVA_OPTS=""
